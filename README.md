@@ -1,0 +1,266 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blue-Black Team</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0a0a0a;
+            color: #ffffff;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #000;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #007bff;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+        }
+
+        .hero h1 {
+            font-size: 3em;
+        }
+
+        .cta-button {
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 80px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .project img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .team-members {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .member img {
+            width: 150px;
+            border-radius: 50%;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 500px;
+            margin: auto;
+        }
+
+        input, textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        button {
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #000;
+        }
+
+        /* Optional: for dark mode toggle */
+        .dark-mode {
+            background-color: #f1f1f1;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Blue-Black</div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <h1>Innovate. Build. Empower.</h1>
+        <p>We are the Blue-Black Team — creators of impactful digital experiences.</p>
+        <a class="cta-button" href="#about">Learn More</a>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p style="text-align: center;">Our mission is to innovate with purpose, build with precision, and empower our community. We believe in values like integrity, creativity, and collaboration.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Our Projects</h2>
+        <div class="project-grid">
+            <div class="project">
+                <img src="AT WORK.jpg" alt="Project 1" />
+                <h3>Project 1</h3>
+                <p>A brief description of the project.</p>
+            </div>
+            <div class="project">
+                <img src="Project 2.jpg" alt="Project 2" />
+                <h3>Project 2</h3>
+                <p>A brief description of the project.</p>
+            </div>
+        </div>
+        <p style="text-align:center;"><a href="#">View All Projects</a></p>
+    </section>
+
+    <section id="team">
+        <h2>Meet the Team</h2>
+        <div class="team-members">
+            <div class="member">
+                <img src="person-7243410_1280.webp" alt="Member 1">
+                <h4>Jane Doe</h4>
+                <p>Lead Developer</p>
+            </div>
+            <div class="member">
+                <img src="person-7243410_1280.webp" alt="Member 2">
+                <h4>John Smith</h4>
+                <p>Project Manager</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form autocomplete="on">
+            <input type="text" name="name" placeholder="Your name" required />
+            <input type="email" name="email" placeholder="Your email" required />
+            <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Blue-Black Team | All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Smooth Scrolling for Navigation Links
+            document.querySelectorAll("nav a").forEach(anchor => {
+                anchor.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute("href").substring(1);
+                    document.getElementById(targetId).scrollIntoView({
+                        behavior: "smooth"
+                    });
+                });
+            });
+
+            // Contact Form Validation
+            const form = document.querySelector("form");
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
+                const name = form.name.value.trim();
+                const email = form.email.value.trim();
+                const message = form.message.value.trim();
+                if (!name || !email || !message) {
+                    alert("Please fill out all fields before submitting.");
+                    return;
+                }
+                alert("Thank you for your message" + name + "!");
+                form.reset();
+            });
+        });
+    </script>
+
+</body>
+</html>
